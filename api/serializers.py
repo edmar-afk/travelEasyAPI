@@ -39,7 +39,7 @@ class SubPlaceSerializer(serializers.ModelSerializer):
     
     class Meta:
         model = SubPlaces
-        fields = ['id', 'place', 'name', 'description', 'type']
+        fields = ['id', 'place', 'name', 'description', 'image', 'type']
 
 
 class LikePlaceSerializer(serializers.ModelSerializer):

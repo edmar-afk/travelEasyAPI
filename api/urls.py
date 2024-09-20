@@ -22,6 +22,6 @@ urlpatterns = [
     path('place-likes/<int:place_id>/', views.DisplayLikesView.as_view(), name='display-likes'),
     path('loved-places/', views.PlaceListView.as_view(), name='place-list'),
     path('user/<int:user_id>/liked-places/', views.UserLikedPlacesView.as_view(), name='user-liked-places'),
-    
+    path('places/<int:placeId>/subplaces/', views.SubPlacesByPlaceView.as_view(), name='subplaces-by-place'),
     path('', include(api_router.urls)),
 ]

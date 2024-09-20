@@ -4,8 +4,8 @@ from rest_framework.permissions import AllowAny, IsAuthenticated
 from django.contrib.auth.models import User
 from rest_framework import status, viewsets
 from django.db.models import Count
-from .serializers import UserRegistrationSerializer, ChatbotSerializer, PlaceSerializer, LikePlaceSerializer
-from .models import Places, LikePlace
+from .serializers import UserRegistrationSerializer, ChatbotSerializer, PlaceSerializer, LikePlaceSerializer, SubPlaceSerializer
+from .models import Places, LikePlace, SubPlaces
 from rest_framework.exceptions import ValidationError
 from rest_framework.response import Response
 from rest_framework.views import APIView
@@ -124,7 +124,18 @@ class UserLikedPlacesView(APIView):
 
 
 
-
+class SubPlacesByPlaceView(APIView):
+    def get(self, request, placeId, *args, **kwargs):
+        try:
+            # Filter SubPlaces by the given placeId
+            subplaces = SubPlaces.objects.filter(place__id=placeId)
+            
+            # Serialize the data
+            serializer = SubPlaceSerializer(subplaces, many=True)
+            
+            return Response(serializer.data, status=status.HTTP_200_OK)
+        except Places.DoesNotExist:
+            return Response({"error": "Place not found"}, status=status.HTTP_404_NOT_FOUND)
 
 
 
