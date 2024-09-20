@@ -21,6 +21,7 @@ urlpatterns = [
     
     path('place-likes/<int:place_id>/', views.DisplayLikesView.as_view(), name='display-likes'),
     path('loved-places/', views.PlaceListView.as_view(), name='place-list'),
-    # Include the router URLs here without an additional 'api/' prefix
+    path('user/<int:user_id>/liked-places/', views.UserLikedPlacesView.as_view(), name='user-liked-places'),
+    
     path('', include(api_router.urls)),
 ]

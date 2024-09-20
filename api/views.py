@@ -114,6 +114,28 @@ class PlaceListView(APIView):
         return Response(serializer.data)
 
 
+class UserLikedPlacesView(APIView):
+    permission_classes = [permissions.IsAuthenticated]
+
+    def get(self, request, user_id):
+        liked_places = LikePlace.objects.filter(user_like_id=user_id)
+        serializer = LikePlaceSerializer(liked_places, many=True)
+        return Response(serializer.data, status=status.HTTP_200_OK)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
