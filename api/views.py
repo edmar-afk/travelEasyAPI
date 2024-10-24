@@ -140,18 +140,7 @@ class SubPlacesByPlaceView(APIView):
 
 
 
-
-
-
-
-
-
-
-
-
-
-    
-# Load the knowledge base from a JSON file
+    # Load the knowledge base from a JSON file
 def load_knowledge_base(file_path: str):
     full_path = os.path.join(BASE_DIR, file_path)
     with open(full_path, 'r') as file:
@@ -164,7 +153,6 @@ def save_knowledge_base(file_path: str, data: dict):
     with open(full_path, 'w') as file:
         json.dump(data, file, indent=2)
 
-
 def find_best_match(user_question: str, questions: list[str]) -> str | None:
     matches = get_close_matches(user_question, questions, n=1, cutoff=0.6)
     return matches[0] if matches else None
@@ -172,8 +160,11 @@ def find_best_match(user_question: str, questions: list[str]) -> str | None:
 def get_answer_for_question(question: str, knowledge_base: dict) -> str | None:
     for q in knowledge_base["questions"]:
         if q["question"] == question:
-            return q["answer"]
+            # Check if '|' is in the answer and replace it with two <br> tags if present
+            answer_with_line_breaks = q["answer"].replace('|', '<br><br>') if '|' in q["answer"] else q["answer"]
+            return answer_with_line_breaks
     return None
+
 class ChatbotViewSet(viewsets.ViewSet):
     serializer_class = ChatbotSerializer
 
@@ -190,3 +181,20 @@ class ChatbotViewSet(viewsets.ViewSet):
             else:
                 return Response({'answer': "I don't understand the question."}, status=status.HTTP_200_OK)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+        
+        
+        
+        
+class ApprovedPlaceListView(generics.ListAPIView):
+    serializer_class = PlaceSerializer
+
+    def get_queryset(self):
+        # Filter places that are only 'Approved'
+        return Places.objects.filter(status='Approved')
+
+class OngoingPlaceListView(generics.ListAPIView):
+    serializer_class = PlaceSerializer
+
+    def get_queryset(self):
+        # Filter places that are only 'On-going'
+        return Places.objects.filter(status='On-going')

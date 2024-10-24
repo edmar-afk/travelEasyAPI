@@ -1,79 +1,458 @@
-{	"questions": [
-		{
-			"question": "What is the color of the sky?",
-			"answer": "Blue"
-		},
-		{
-			"question": "how are you",
-			"answer": "I'm doing great!"
-		},
-		{
-			"question": "How are you doing mate?",
-			"answer": "I'm doing good"
-		},
-		{
-			"question": "What's up?^",
-			"answer": "Not much, what about you?"
-		},
-		{
-			"question": "Where can I subscribe?",
-			"answer": "Idk, subscribe to what?"
-		},
-		{
-			"question": "Say something funny",
-			"answer": "Your love life"
-		},
-		{
-			"question": "tell me more",
-			"answer": "I don't want to"
-		},
-		{
-			"question": "ok",
-			"answer": "ok?"
-		},
-		{
-			"question": "hello",
-			"answer": "Hello, how can I help you?"
-		},
-		{
-			"question": "I need help of something",
-			"answer": "What something? Please be more specific so I can assist you."
-		},
-		{
-			"question": "can you help me?",
-			"answer": "Sure, just tell me what kind of help"
-		},
-		{
-			"question": "Good morning",
-			"answer": "Hello, Good morning"
-		},
-		{
-			"question": "hello good afternoon mate",
-			"answer": "Good afternoon"
-		},
-		{
-			"question": "Good day, mate",
-			"answer": "Good day to you too! How can I assist you today?"
-		},
-		{
-			"question": "bye",
-			"answer": "Goodbye! If you have any more questions in the future, feel free to ask. Have a great day!"
-		},
-		{
-			"question": "Cool",
-			"answer": "I'm Cool"
-		},
-		{
-			"question": "hi",
-			"answer": "hello"
-		},
-		{
-			"question": "hey",
-			"answer": "Hey there!"
-		},
-		{
-			"question": "hey",
-			"answer": "Hey there again!"
-		}
-	]
+{	"questions": [	{ "question": "What is the color of the sky?", "answer": "Blue" },	{ "question": "how are you", "answer": "I'm doing great!" },
+	{ "question": "How are you doing mate?", "answer": "I'm doing good" },
+	{ "question": "What's up?^", "answer": "Not much, what about you?" },
+	{ "question": "Where can I subscribe?", "answer": "Idk, subscribe to what?" },
+	{ "question": "Say something funny", "answer": "Your love life" },
+	{ "question": "tell me more", "answer": "I don't want to" },
+	{ "question": "ok", "answer": "ok?" },
+	{ "question": "hello", "answer": "Hello, how can I help you?" },
+	{
+		"question": "I need help of something",
+		"answer": "What something? Please be more specific so I can assist you."
+	},
+	{ "question": "can you help me?", "answer": "Sure, just tell me what kind of help" },
+	{ "question": "Good morning", "answer": "Hello, Good morning" },
+	{ "question": "hello good afternoon mate", "answer": "Good afternoon" },
+	{ "question": "Good day, mate", "answer": "Good day to you too! How can I assist you today?" },
+	{
+		"question": "bye",
+		"answer": "Goodbye! If you have any more questions in the future, feel free to ask. Have a great day!"
+	},
+	{ "question": "Cool", "answer": "I'm Cool" },
+	{
+		"question": "What is the basis for the Distance you provided in the information?",
+		"answer": "We choose a location in Lakewood, specifically the center of Lakewood, as the basis for the distance data we provided. This data covers the distances from the center of Lakewood to various tourist spots. "
+	},
+	{
+		"question": "Is it possible to hire a tour guide when visiting Baka Falls? If so, who can I contact? ",
+		"answer": "Yes, you can hire a tourist guide when you visit Baka Falls. You can go to the Barangay Hall of Gasa, Lakewood, Zamboanga del Sur.  It's located right on the highway, so you'll easily spot their Barangay Hall. The Barangay Captain will be able to provide you with a tourist guide. "
+	},
+	{
+		"question": "Is it possible to hire a tour guide when visiting Camp lagkaw? If so, who can I contact? ",
+		"answer": "Yes, you can hire a tourist guide when you visit Camp lagkaw. You can go to the Barangay Hall of tubod, Lakewood, Zamboanga del Sur.  It's located right on the highway, so you'll easily spot their Barangay Hall. The Barangay Captain will be able to provide you with a tourist guide. "
+	},
+	{
+		"question": "Is it possible to hire a tour guide when visiting Meguranao Peak? If so, who can I contact? ",
+		"answer": "Yes, you can hire a tourist guide when you visit Meguranao Peak. You can go to the Barangay Hall of Gasa, Lakewood, Zamboanga del Sur.  It's located right on the highway, so you'll easily spot their Barangay Hall. The Barangay Captain will be able to provide you with a tourist guide. "
+	},
+	{
+		"question": "How long does it take to walk to Camp lagkaw?",
+		"answer": "Just 20-30 mins. Walk along the highway to reach the Campsite. "
+	},
+	{
+		"question": "How long does it take to walk to Meguarano Peak Busai? ",
+		"answer": "Megurano Peak Busai is a walking distance for almost an hour along the highway. "
+	},
+	{
+		"question": "What are some things to do today in Lakewood boulevard? ",
+		"answer": "You can go fishing or swimming. You can also hang out with your friends or family for as long as you want. You can also wait for the sunrise and sunset. "
+	},
+	{
+		"question": "What are the best hiking trails in Lakewood for experienced hikers and how long does it takes to reach the area?",
+		"answer": "Looking for the best hiking experience? Choose your own spot or check out these amazing locations: | Megurano Peak Busai is a walking distance for almost an hour along the highway. | Baka Falls takes an Hour of walking. | Camp Lagkaw is just 20-30mins. Walking distance along the highway to reach the campsite. "
+	},
+	{
+		"question": "What are the price ranges for accommodations in Pg Suite Spot? ",
+		"answer": "Glamming Room(2): 900.00, good for 2 person | Suite Room(2): 2,500.00, good for 4 person | Barkadahan(1): 7,000.00, good for 40 person"
+	},
+	{
+		"question": "What are the price ranges for accommodations in libas Spring Resort? ",
+		"answer": "Standard Room (4) : 700 | Barkadahan(1): 1,000.00, Package Deal"
+	},
+	{
+		"question": "What are the price ranges for accommodations in Bree-brix Brazil? ",
+		"answer": "Standard Room(4): 700.00, good for 2 person"
+	},
+	{
+		"question": "What are the price ranges for accommodations in hexa-k spring resort? ",
+		"answer": "Glamming Room(6): 500.00, good for 2 person"
+	},
+	{
+		"question": "What are the price ranges for accommodations in Roberto’s Villa Resort? ",
+		"answer": "Family room (3-5 pax) = 2,300 - (Free entrance) | Barkadahan (6-10 pax) = 2,500 per pax  (Free entrance) | Standard Room (2-4 pax, 1,800 - (free entrance) | Tent usage= 250.00 (per rent) = 150.00 fee for bringing of own tent "
+	},
+	{ "question": "What are the price ranges for accommodations in Camp lagkaw? ", "answer": "Cabin(2)-300.00" },
+	{
+		"question": "What are the price ranges for accommodations in Megurano Peak Busai? ",
+		"answer": "Every tourist must bring their own: | tent | Hammock/Duyan"
+	},
+	{
+		"question": "What are the price ranges for accommodations in HexaK Spring Resort?",
+		"answer": "Barkadahan (1): ₱2500, good for 40 people (package deal) | Standard Room (6): ₱500, good for 2 people"
+	},
+	{
+		"question": "What are the price ranges for accommodations in Libas Spring Resort?",
+		"answer": "Barkadahan (1) = 1000.00(package Deal. | Standard Room (4)= 700.00"
+	},
+	{
+		"question": "What types of accommodations are available in Lakewood?",
+		"answer": "The various accommodation options available at the Lakewood tourist spot include hotels, barkadahan rooms, Glamping room, cabin in designated campsites, and Kubo."
+	},
+	{
+		"question": "Do any resorts or tourist spots offer free Wi-Fi?",
+		"answer": "All resorts in Lakewood do not offer free Wi-Fi, but they have a paid internet service available at each resort."
+	},
+	{
+		"question": "Is it possible to book accommodations in Lakewood online?",
+		"answer": "Yes, you can conveniently book reservations online by contacting the number displayed on the homepage."
+	},
+	{
+		"question": "What is the basis for the kilometers you provided in the information?",
+		"answer": "We choose a location in Lakewood, specifically the center of Lakewood, as the basis for the distance data we provided. This data covers the distances from the center of Lakewood to various tourist spots."
+	},
+	{
+		"question": "Is it possible to hire a tour guide when visiting Baka Falls? If so, who can I contact?",
+		"answer": "Yes, you can hire a tourist guide when you visit Baka Falls. You can go to the Barangay Hall of Gasa, Lakewood, Zamboanga del Sur. It's located right on the highway, so you'll easily spot their Barangay Hall. The Barangay Captain will be able to provide you with a tourist guide."
+	},
+	{
+		"question": "How long does it take to walk to Camp Lagkaw?",
+		"answer": "Just 20-30 mins. Walk along the highway to reach the Campsite."
+	},
+	{
+		"question": "How long does it take to walk to Meguarano Peak Busai?",
+		"answer": "Megurano Peak Busai is a walking distance for almost an hour along the highway."
+	},
+	{
+		"question": "How long does it take to walk to Baka Falls?",
+		"answer": "It takes an hour of walking to reach the Baka Falls."
+	},
+	{
+		"question": "What are some things to do today in Lakewood boulevard? ",
+		"answer": "You can go fishing or swimming. You can also hang out with your friends or family for as long as you want. You can also wait for the sunrise and sunset."
+	},
+	{
+		"question": "What are the best hiking trails in Lakewood for experienced hikers and how long does it takes to reach the area? ",
+		"answer": "Looking for the best hiking experience? Choose your own spot or check out these amazing locations: | Megurano Peak Busai is a walking distance for almost an hour along the highway. | Baka Falls takes an Hour of walking. | Camp Lagkaw is just 20-30mins. Walking distance along the highway to reach the campsite. "
+	},
+	{
+		"question": "How many cottages in Bree-brix brazil Resort? How much the price range for each cottages?",
+		"answer": "Bree-brix brazil Resort have  different kind of cottages this are: | Cottage1 (3) = 500 | Cottage2 (3) = 700 | Large Cottage = 1500 | Function Hall= 5000"
+	},
+	{
+		"question": "How many cottages in Roberto’s Villa Resort? How much the price range for each cottages?",
+		"answer": "Roberto’s Villa Resort have different kind of cottages this are : | Cabana (1) = 700 | Cabana (2) = 800 | Mini Cotages (6) = 300 | Function Hall = 1,800"
+	},
+	{
+		"question": "How many cottages in Hexak Spring  Resort? How much the price range for each cottages?",
+		"answer": "Hexak Spring Result have different kind of cottages this are : | Big Cottage (1)=500 | Umbrella Cottage (2) = 200 each | Table (4) = 150 each | Function Hall (main) = 5000 | Function Hall = 2,500"
+	},
+	{
+		"question": "How many cottages in Libas Spring Resort? How much the price range for each cottages?",
+		"answer": "Libas spring Resort have different kind of cottages this are : | Cottage1 (4)= 350 | Cottage2  (4) = =500 | Function Hall = 1,500"
+	},
+	{
+		"question": "How many cottages in Camp Lagkaw? How much the price range for each cottages?",
+		"answer": "Camp lagkaw have different kind of cottages this are : | Cabin (2) = 300"
+	},
+	{
+		"question": "How many cottages in ATM Resort? How much the price range for each cottages?",
+		"answer": "ATM Resort have different kind of cottages this are : Cotages (8) = 150"
+	},
+	{
+		"question": "What are the price ranges for accommodations in Pg Suite Spot? ",
+		"answer": "Glamming Room(2): 900.00, good for 2 | personSuite Room(2): 2,500.00, good for 4 person | Barkadahan(1): 7,000.00, good for 40 person"
+	},
+	{
+		"question": "What are the price ranges for accommodations in Roberto’s Villa Resort? ",
+		"answer": "Family room (3-5 pax) = 2,300 - (Free entrance) | Barkadahan (6-10 pax) = 2,500 per pax  (Free entrance) | Standard Room (2-4 pax ,1,800 - (free entrance) | Tent usage= 250.00 (per rent) = 150.00 fee for bringing of own tent"
+	},
+	{
+		"question": "What are the price ranges for accommodations in Camp lagkaw?",
+		"answer": "Cabin(2)-300.00"
+	},
+	{
+		"question": "What are the price ranges for accommodations in Megurano Peak Busai?",
+		"answer": "Every tourist must bring their own: tent and Hammock/Duyan"
+	},
+	{
+		"question": "What are the price ranges for accommodations in Bree-brix resort? ",
+		"answer": "Standard Room (6): ₱500,  good for 2 people"
+	},
+	{
+		"question": "What are the price ranges for accommodations in HexaK Spring Resort? ",
+		"answer": "Barkadahan (1): ₱2500, good for 40 people (package deal) | Standard Room (6): ₱500, good for 2 people "
+	},
+	{
+		"question": "What are the price ranges for accommodations in Libas Spring Resort? ",
+		"answer": "Barkadahan (1) = 1000.00(package Deal. | Standard Room (4)= 700.00 "
+	},
+	{
+		"question": "What types of accommodations are available in Lakewood? ",
+		"answer": "The various accommodation options available at the Lakewood tourist spot include hotels, barkadahan rooms, Glamming room, cabin in designated campsites, and Kubo. "
+	},
+	{
+		"question": "Do any resort or tourist spot offer free Wi-Fi? ",
+		"answer": "All resorts in Lakewood do not offer free Wi-Fi, but they have a paid internet service available at each resort."
+	},
+	{
+		"question": "Is it possible to book accommodations in Lakewood online?",
+		"answer": "Yes, you can conveniently book reservations online by contacting the number displayed on the homepage."
+	},
+	{
+		"question": "Ano ang batayan ng distansyang ibinigay mo sa impormasyon?",
+		"answer": "Pinili namin ang isang lokasyon sa Lakewood, partikular ang sentro ng Lakewood, bilang batayan para sa distansyang ibinigay namin. Sakop ng datos na ito ang mga distansya mula sa sentro ng Lakewood patungo sa iba't ibang mga lugar na pasyalan."
+	},
+	{
+		"question": "Posible bang mag-hire ng tour guide kapag bumibisita sa Baka Falls? Kung oo, sino ang pwede kong kontakin?",
+		"answer": "Oo, pwede kang mag-hire ng tour guide kapag bumibisita ka sa Baka Falls. Pwede kang pumunta sa Barangay Hall ng Gasa, Lakewood, Zamboanga del Sur. Nasa highway lang ito, kaya madali mo itong makikita. Ang Barangay Captain ang pwedeng magbigay sa iyo ng tour guide."
+	},
+	{
+		"question": "Posible bang mag-hire ng tour guide kapag bumibisita sa Camp Lagkaw? Sino ang pwede kong kontakin?",
+		"answer": "Oo, pwede kang mag-hire ng tour guide kapag bumibisita ka sa Camp Lagkaw. Pwede kang pumunta sa Barangay Hall ng Tubod, Lakewood, Zamboanga del Sur. Nasa highway lang ito, kaya madali mo itong makikita. Ang Barangay Captain ang pwedeng magbigay sa iyo ng tour guide."
+	},
+	{
+		"question": "Posible bang mag-hire ng tour guide kapag bumibisita sa Meguranao Peak? Kung oo, sino ang pwede kong kontakin?",
+		"answer": "Oo, pwede kang mag-hire ng tour guide kapag bumibisita ka sa Meguranao Peak. Pwede kang pumunta sa Barangay Hall ng Gasa, Lakewood, Zamboanga del Sur. Nasa highway lang ito, kaya madali mo itong makikita. Ang Barangay Captain ang pwedeng magbigay sa iyo ng tour guide."
+	},
+	{
+		"question": "Gaano katagal ang lakad papunta sa Camp Lagkaw?",
+		"answer": "Mga 20-30 minutong paglalakad mula sa highway para makarating sa campsite."
+	},
+	{
+		"question": "Gaano katagal ang lakad papunta sa Meguarano Peak Busai?",
+		"answer": "Halos isang oras ang lakad papunta sa Megurano Peak Busai, mula sa highway."
+	},
+	{
+		"question": "Gaano katagal ang lakad papunta sa Baka Falls?",
+		"answer": "Isang oras ang lakad papunta sa Baka Falls."
+	},
+	{
+		"question": "Ano ang mga pwedeng gawin ngayon sa Lakewood Boulevard? ",
+		"answer": "Pwede kang mamingwit o lumangoy. Pwede ka ring mag-hang out kasama ang mga kaibigan o pamilya mo hangga't gusto mo. Pwede ka ring maghintay ng pagsikat at paglubog ng araw. "
+	},
+	{
+		"question": "Ano ang mga pinakamagandang hiking trail sa Lakewood para sa mga bihasang hiker at gaano katagal para makarating sa lugar na iyon?",
+		"answer": "Naghahanap ka ba ng pinakamagandang hiking experience?  Pumili ka ng sariling lugar o tingnan ang mga kahanga-hangang lokasyon na ito: | Halos isang oras ang lakad papunta sa Megurano Peak Busai, mula sa highway. |Isang oras na lakad papunta sa Baka Falls. | Mga 20-30 minuto lang ang lakad papunta sa Camp Lagkaw,mula sa highway."
+	},
+	{
+		"question": "Ilan ang mga Maliliit na bahay  sa Bree-brix Brazil Resort? Magkano ang bawat  maliliit na bahay?",
+		"answer": "Ang bree-brix brazil Resort ay mayroong ibat ibang maliliit na bahay  ito ay ang: | Cottage1 (3) = 500 | Cottage2 (3) = 700 | Large Cottage = 1500 | Function Hall= 5000"
+	},
+	{
+		"question": "Ilan ang mga Maliliit na bahay  sa Roberto’s Villa  Resort? Magkano ang bawat  maliliit na bahay?",
+		"answer": "Ang Roberto’s Villa Resort ay mayroong ibat ibang maliliit na bahay  ito ay ang: | Cabana (1) = 700 |Cabana (2) = 800 | Mini Cotages (6) = 300 | Function Hall = 1,800"
+	},
+	{
+		"question": "Ilan ang mga Maliliit na bahay  sa Hexak Spring Resort? Magkano ang bawat  maliliit na bahay?",
+		"answer": "Ang Hexak Spring Resort ay mayroong ibat ibang maliliit na bahay  ito ay ang: Umbrella Cottage (2) = 200 each | Table (4) = 150 each | Function Hall (main) = 5000 | Function Hall = 2,500"
+	},
+	{
+		"question": "Ilan ang mga Maliliit na bahay  sa Libas Spring Resort? Magkano ang bawat  maliliit na bahay?",
+		"answer": "Ang Libas Spring Resort ay mayroong ibat ibang maliliit na bahay  ito ay ang: | Cottage1 (4)= 350 | Cottage2  (4) = =500 | Function Hall = 1,500"
+	},
+	{
+		"question": "Ilan ang mga Maliliit na bahay  sa Camp Lagkaw? Magkano ang bawat  maliliit na bahay?",
+		"answer": "Mayroong isang malilit na bahay ang Camp Lagkaw ito ay ang: Cabin (2) = 300"
+	},
+	{
+		"question": "Ilan ang mga Maliliit na bahay  sa ATM Resort? Magkano ang bawat  maliliit na bahay?",
+		"answer": "Mayroong isang malilit na bahay ang ATM Result ito ay ang: Cotages (8) = 150"
+	},
+	{
+		"question": "Ano ang mga presyo ng mga accommodation sa PG Suite Spot?",
+		"answer": "Glamming Room(2): 900.00, para sa 2 tao | Suite Room(2): 2,500.00, para sa 4 tao | Barkadahan(1): 7,000.00, para sa 40 tao "
+	},
+	{
+		"question": "Ano ang mga presyo ng mga accommodation sa Roberto’s Villa Resort? ",
+		"answer": "Family room (3-5 tao) = 2,300 - (Libreng pasukan) | Barkadahan (6-10 tao) = 2,500 kada tao  (Libreng pasukan) | Standard Room (2-4 tao) = 1,800 - (Libreng pasukan) | Paggamit ng tent= 250.00 (kada upa) = 150.00 bayad para sa pagdadala ng sariling tent "
+	},
+	{
+		"question": "Ano ang mga presyo ng mga accommodation sa Camp Lagkaw? ",
+		"answer": "Cabin(2)-300.00 "
+	},
+	{
+		"question": "Ano ang mga presyo ng mga accommodation sa Megurano Peak Busai? ",
+		"answer": "Dapat magdala ang bawat turista ng kanilang sariling: tent at Hammock/Duyan "
+	},
+	{
+		"question": "Ano ang mga presyo ng mga accommodation sa Bree-brix resort? ",
+		"answer": "Standard Room (6): ₱500, para sa 2 tao"
+	},
+	{
+		"question": "Ano ang mga presyo ng mga accommodation sa HexaK Spring Resort? ",
+		"answer": "Barkadahan (1): ₱2500, para sa 40 tao (package deal) | Standard Room (6): ₱500, para sa 2 tao "
+	},
+	{
+		"question": "Ano ang mga presyo ng mga accommodation sa Libas Spring Resort?",
+		"answer": "Barkadahan (1) = 1000.00(package deal) | Standard Room (4)= 700.00"
+	},
+	{
+		"question": "Ano ang mga uri ng accommodation na available sa Lakewood? ",
+		"answer": "Ang iba't ibang mga opsyon sa accommodation na available sa Lakewood tourist spot ay kinabibilangan ng mga hotel, barkadahan rooms, Glamming room, cabin sa mga designated campsite, at Kubo. "
+	},
+	{
+		"question": "Mayroon bang resort o lugar na pasyalan na nag-aalok ng libreng Wi-Fi? ",
+		"answer": "Walang resort sa Lakewood na nag-aalok ng libreng Wi-Fi, pero may bayad na internet service na available sa bawat resort."
+	},
+	{
+		"question": "Posible bang mag-book ng accommodation sa Lakewood online? ",
+		"answer": "Oo, pwede kang mag-book online sa pamamagitan ng pagkontak sa numerong nakalagay sa homepage."
+	},
+	{
+		"question": "Are there any local markets or food stalls available in every tourist spot?",
+		"answer": "Yes, each tourist has available stores."
+	},
+	{
+		"question": "What are the best transportation options to reach the tourist destination? ",
+		"answer": "You can ride a tricycles since there are many operating, or you can take a van, you can also bring your own vehicle."
+	},
+	{
+		"question": "Are there any vehicle or tricycles available in Lakewood?",
+		"answer": "Yes, we can take a van and a motorcycle(bao-bao, single motor)."
+	},
+	{
+		"question": "What are some good hotels or resorts in Lakewood?",
+		"answer": "-We have: | •Roberto's Villa, PG Suite spot located at Gatub , lakewood Zamboanga del, sur. | •Camp Lagkaw, ATM Resort(under construction) located at Tubod, lakewood Zamboanga del, sur. | •Poblacion Lakeview/Danao, Meguranao Peak Busai which is located at Poblacion, lakewood Zamboanga del, sur. | •Floating Cottages, Alindahaw lakeview resort(under renovation) at Biswangan, Lakewood Zamboanga del, sur. | •Libas Spring Resort at Bululawan , Lakewood Zamboanga del, sur. | •Breebrix-Brazil Resort, Hexa K Resort located at Kahayag, lakewood Zamboanga del sur. | •Baka falls at Gasa, Lakewood Zamboanga del, sur. | •Villa Innocentes(under construction) at Lukuan, lakewood Zamboanga del, sur."
+	},
+	{
+		"question": "Are there any budget-friendly  accommodations in every tourist spot in Lakewood?",
+		"answer": "All tourist spots are budget-friendly because the entrance fee for each resort is not too heavy on the pocket, even their cottages, as well as their function hall, are within budget too."
+	},
+	{
+		"question": "What are the main tourist attractions in Lakewood?",
+		"answer": "Poblacion lakeview/Danao and Alindahaw lakeview resort are the main tourist attractions in lakewood since this are the well-known signature of lakewood tourist spot."
+	},
+	{
+		"question": "What are some things to do in Lakewood besides the lake?",
+		"answer": "Aside from the beautiful view of the lake, you can also swim or splash around in the swimming pools. If you're the type of person who enjoys hiking, you can choose Meguranao Peak, Busai, Baka Falls, and Camp Lagkaw as your tourist destination."
+	},
+	{
+		"question": "Are there any hiking trails or nature walks?",
+		"answer": "Meguranao Peak, Busai, Baka Falls, and Camp Lagkaw are the tourist spots in Lakewood that are within walking distance, and upon reaching your destination, you will see the stunning views. The satisfying view that you won't regret visiting the place."
+	},
+	{
+		"question": "What are some must-see places in Lakewood that I shouldn't miss?",
+		"answer": "All tourist spots in Lakewood are must-see places you shouldn't miss because you will surely enjoy each visit to every resort. Aside from the available swimming pools in every tourist spot, you will definitely be captivated by the beauty of the scenery as most of the tourist spots offer nature views."
+	},
+	{
+		"question": "Mayroon bang mga lokal na palengke o mga tindahan ng pagkain sa bawat tourist spot?",
+		"answer": "Oo, mayroon tindahan sa bawat tourist spot."
+	},
+	{
+		"question": "Ano ang pinakamagandang paraan ng transportasyon papunta sa tourist destination?",
+		"answer": "Pwede kang sumakay ng tricycle dahil marami namang namamasada, o di kaya ay mag Van, pwede din kayong magdala ng sariling sasakyan."
+	},
+	{
+		"question": "Mayroon bang mga sasakyan o tricycle sa Lakewood?",
+		"answer": "Oo, pwede tayo mag Van at motorsiklo (bao-bao, single motor)."
+	},
+	{
+		"question": "Ano ang mga magagandang hotel o resort sa Lakewood?",
+		"answer": "-Mayroon tayo: | •Roberto's Villa, PG Suite spot na matatagpuan sa Gatub, Lakewood, Zamboanga del Sur. | •Camp Lagkaw, ATM Resort (kasalukuyang nasa konstruksyon) na matatagpuan sa Tubod, Lakewood, Zamboanga del Sur. | •Poblacion Lakeview/Danao, Meguranao Peak Busai na matatagpuan sa Poblacion, Lakewood, Zamboanga del Sur. | •Floating Cottages, Alindahaw Lakeview Resort (kasalukuyang sa renovasyon) sa Biswangan, Lakewood, Zamboanga del Sur. | •Libas Spring Resort sa Bululawan, Lakewood, Zamboanga del Sur. | •Breebrix-Brazil Resort, Hexa K Resort na matatagpuan sa Kahayag, Lakewood, Zamboanga del Sur. | •Baka Falls sa Gasa, Lakewood, Zamboanga del Sur. | •Villa Innocentes (kasalukuyang nasa konstruksyon) sa Lukuan, Lakewood, Zamboanga del Sur."
+	},
+	{
+		"question": "Mayroon bang budget-friendly na accommodation sa bawat tourist spot sa Lakewood?",
+		"answer": "Lahat ng tourist spot ay budget-friendly dahil hindi gaanong mabigat sa bulsa ang entrance fee ng bawat resort, pati na rin ang kanilang mga cottages at function hall, ay pasok sa budget."
+	},
+	{
+		"question": "Ano ang mga pangunahing atraksyon sa Lakewood?",
+		"answer": "Ang Poblacion Lakeview/Danao at Alindahaw Lakeview Resort ang pangunahing atraksyon sa Lakewood dahil ito ang mga kilalang pasyalan sa Lakewood."
+	},
+	{
+		"question": "Ano ang mga pwedeng gawin sa Lakewood bukod sa lawa?",
+		"answer": "Bukod sa magandang tanawin ng lawa, maaari ka ring lumangoy o maglaro sa mga swimming pool. Kung ikaw ay mahilig sa hiking, maaari mong piliin ang Meguranao Peak, Busai, Baka Falls, at Camp Lagkaw bilang iyong destinasyon."
+	},
+	{
+		"question": "Mayroon bang mga hiking trail o nature walks?",
+		"answer": "Ang Meguranao Peak, Busai, Baka Falls, at Camp Lagkaw ang mga tourist spot sa Lakewood na walking distance, at pagdating mo sa iyong destinasyon, makikita mo ang kahanga-hangang tanawin. Isang nakakatuwang tanawin na hindi mo pagsisisihan ang pagbisita sa lugar."
+	},
+	{
+		"question": "Ano ang mga dapat mong makita sa Lakewood na hindi mo dapat palampasin?",
+		"answer": "Lahat ng tourist spot sa Lakewood ay mga dapat makita na hindi mo dapat palampasin dahil tiyak na mag-eenjoy ka sa bawat pagbisita mo sa bawat resort. Maliban sa mga swimming pool na available sa bawat tourist spot, tiyak na mahuhumaling ka sa ganda ng tanawin dahil karamihan sa mga tourist spot ay may natural na tanawin."
+	},
+	{
+		"question": "Aduna bay lokal nga merkado o tindahan sa matag tourist spot?",
+		"answer": "Oo, aduna'y mga tindahan sa kada tourist spot."
+	},
+	{
+		"question": "Naa bay mga sakyanan o tricycle sa Lakewood?",
+		"answer": "Oo, pwede ta mag Van ug motorsiklo (bao-bao, single motor)."
+	},
+	{
+		"question": "Unsa ang mga maayong hotel o resort sa Lakewood?",
+		"answer": "Aduna kita: | •Roberto's Villa, PG Suite spot nga nahimutang sa Gatub, Lakewood, Zamboanga del Sur. | •Camp Lagkaw, ATM Resort (sa pagpanguma) nga nahimutang sa Tubod, Lakewood, Zamboanga del Sur. | •Poblacion Lakeview/Danao, Meguranao Peak Busai nga nahimutang sa Poblacion, Lakewood, Zamboanga del Sur. | •Floating Cottages, Alindahaw Lakeview Resort (sa pag-renovate) sa Biswangan, Lakewood, Zamboanga del Sur. | •Libas Spring Resort sa Bululawan, Lakewood, Zamboanga del Sur. | •Breebrix-Brazil Resort, Hexa K Resort nga nahimutang sa Kahayag, Lakewood, Zamboanga del Sur. | •Baka Falls sa Gasa, Lakewood, Zamboanga del Sur. | •Villa Innocentes (sa pagpanguma) sa Lukuan, Lakewood, Zamboanga del Sur."
+	},
+	{
+		"question": "Aduna bay budget-friendly nga accommodation sa matag tourist spot sa Lakewood?",
+		"answer": "Tanang tourist spot kay budget-friendly kay dili kaayo kabug-at sa bulsa ang entrance fee sa matag resort, bisan ang ilang mga cottages, ug ilang function hall, pasok pud sa budget."
+	},
+	{
+		"question": "Unsa ang mga pangunahing atraksyon sa Lakewood?",
+		"answer": "Ang Poblacion Lakeview/Danao ug Alindahaw Lakeview Resort mao ang mga pangunahing atraksyon sa Lakewood tungod kay kini man ang mas nailhan sa mga katawhan kung maghisgut nag Lakewood."
+	},
+	{
+		"question": "Unsa ang mga butang nga mahimo sa Lakewood gawas sa lawa?",
+		"answer": "Gawas sa maanyag nga tan-awon sa lawa, pwede usab ka magtampisaw o maligo sa mga swimming pool. Kon ikaw ang klase nga tawo nga ganahan sa hiking, pwede nimo pili-on ang Meguranao Peak, Busai, Baka Falls, ug Camp Lagkaw isip imong destinasyon."
+	},
+	{
+		"question": "Aduna bay mga hiking trail o nature walks?",
+		"answer": "Ang Meguranao Peak, Busai, Baka Falls, ug Camp Lagkaw mao ang mga tourist spot sa Lakewood nga kinahanglan mag hike pag adto sa lugar , ug human nimong abot sa imong destinasyon, makita nimo ang maanundut nga tan-awon. Ang makalingaw nga tan-awon sa palibot nga dili ka magmahay sa pagbisita sa lugar."
+	},
+	{
+		"question": "Unsa ang mga dapat nimo makita sa Lakewood nga dili nimo dapat palampuson?",
+		"answer": "Tanang tourist spot sa Lakewood mao ang mga dapat makita nimo nga dili nimo dapat palampuson kay siguradong mag-enjoy ka sa matag pagbisita sa matag resort. Gawas pa sa mga swimming pool nga anaa sa matag tourist spot, siguradong mabihag ka sa kanindut sa palibot kay karamihan sa mga tourist spot adunay natural nga tan-awon."
+	},
+	{
+		"question": "Unsa ang labing maayo nga opsyon sa transportasyon aron makaduol sa destinasyon sa turista?",
+		"answer": "Pwede ka mag sakay og tricycle kay daghan man mamasada, o pwede pud ka mag Van, pwede pud magdala ug kaugalingong sakyanan."
+	},
+
+	{
+		"question": "How long and how much does it cost to travel to all tourist spot in lakewood?",
+		"answer": "Lakewood Boulevard: Distance: 1 km. | Mode of transportation: •Any kind of motorcycle: •Regular fare: 20.00, •Pwd/ Senior Citizen: 14.00 | Alindahaw Lakeview Resort: Distance: 5 km. | Mode of transportation: •Any kind of Motorcycle: •Regular fare: 30.00, •Pwd/ Senior Citizen: 26.00 | •Van: •Regular fare: 20.00 | Floating Cottage: Distance: 5 km | Mode of transportation: •Any kind of Motorcycle: •Regular fare: 30.00, •Pwd/ senior citizen: 26.00 | •Van: •Regular fare: 20.00 | Meguranao Peak Busai: Distance: 3 km | Mode of Transportation: •Any kind of Motorcycle: •Regular Fare: 30.00, •Pwd/ Senior citizen: 26.00 | PG Suite Spot: Distance: 17 km | Mode of Transportation: •Any kind of Motorcycle: •Regular fare: 90.00, •Pwd/Senior citizen: 72.00 | Villa Inocentes: Distance: 10 km | Mode of transportations: •Any kind of Motorcycle: •Regular fare: 50.00, •Pwd/ Senior Citizen: 40.00 | •Van: •Regular fare: 40.00 | Libas Spring Resort: Distance: 10 km | Mode of Transportation: •Any kind of Motorcycle: •Regular fare: 100.00, •Pwd/ Senior Citizen: 80.00 | •Van: •Regular Fare: 50.00 | Baka Falls: Distance: 14 km | Mode of transportation: •Any kind of Motorcycle: •Regular Fare: 120.00, •Pwd/ Senior Citizen: 96.00 | HexaK Spring Resort: Distance: 7 km | Mode of Transportation: •Any kind of Motorcycle: •Regular Fare: 60.00, • Student/PWD/Senior Citizen: 48.00 | •Van: •Regular fare: 30.00 | Roberto’s Villa: Distance: 17 km | Mode of Transportation: •Any kind of Motorcycle: •Regular fare: 90.00, •Pwd/ Senior citizen: 72.00 | Camp Lagkaw: Distance: 14 km | Mode of transportation: •Any kind of Motorcycle: •Regular Fare: 80.00, •Pwd/ Senior Citizen: 64.00 | •Van: •Regular Fare: 50.00 | Bree-brix Brazil Resort: Distance: 7 km | Mode of Transportation: •Any kind of Motorcycle: •Regular Fare: 60.00, • Student/PWD/Senior Citizen: 48.00 | •Van: •Regular fare: 30.00"
+	},
+	{
+		"question": "How long and how much does it cost to travel in Lakewood Boulevard?",
+		"answer": "Distance: 1 km | Mode of transportation: •Any kind of motorcycle: •Regular fare: 20.00, •Pwd/ Senior Citizen: 14.00"
+	},
+	{
+		"question": "How long and how much does it cost to travel in Camp Lagkaw?",
+		"answer": "Camp Lagkaw: Distance: 14 km | Mode of transportation: •Any kind of Motorcycle: •Regular Fare: 80.00 •Pwd/ Senior Citizen: 64.00 | •Van: •Regular Fare: 50.00"
+	},
+	{
+		"question": "How long and how much does it cost to travel in Alindahaw Lakeview Resort?",
+		"answer": "Distance: 5 km | Mode of transportation: •Any kind of Motorcycle: •Regular fare: 30.00 •Pwd/ Senior Citizen: 26.00 | •Van: •Regular fare: 20.00"
+	},
+	{
+		"question": "How long and how much does it cost to travel in Floating Cottage?",
+		"answer": "Distance: 5 km | Mode of transportation: •Any kind of Motorcycle: •Regular fare: 30.00 •Pwd/ senior citizen: 26.00 | •Van: •Regular fare: 20.00"
+	},
+	{
+		"question": "How long and how much does it cost to travel in Meguranao Peak Busai?",
+		"answer": "Distance: 3 km | Mode of transportation: •Any kind of Motorcycle: •Regular Fare: 30.00, •Pwd/ Senior citizen: 26.00"
+	},
+	{
+		"question": "How long and how much does it cost to travel in PG Suite Spot?",
+		"answer": "Distance: 17 km | Mode of transportation: •Any kind of Motorcycle: •Regular fare: 90.00 •Pwd/Senior citizen: 72.00"
+	},
+	{
+		"question": "How long and how much does it cost to travel in Villa Inocentes?",
+		"answer": "Distance: 10 km | Mode of transportation: •Any kind of Motorcycle: •Regular fare: 50.00, •Pwd/ Senior Citizen: 40.00 | •Van: •Regular fare: 40.00"
+	},
+	{
+		"question": "How long and how much does it cost to travel in Libas Spring Resort?",
+		"answer": "Distance: 10 km | Mode of transportation: •Any kind of Motorcycle: •Regular fare: 100.00, •Pwd/ Senior Citizen: 80.00 | •Van: •Regular Fare: 50.00"
+	},
+	{
+		"question": "How long and how much does it cost to travel in Baka Falls?",
+		"answer": "Distance: 14 km | Mode of transportation: •Any kind of Motorcycle: •Regular Fare: 120.00, •Pwd/ Senior Citizen: 96.00"
+	},
+	{
+		"question": "How long and how much does it cost to travel in HexaK Spring Resort?",
+		"answer": "Distance: 7 km | Mode of transportation: •Any kind of Motorcycle: •Regular Fare: 60.00, •Student/PWD/Senior Citizen: 48.00 | •Van: •Regular fare: 30.00"
+	},
+	{
+		"question": "How long and how much does it cost to travel in Roberto’s Villa?",
+		"answer": "Distance: 17 km | Mode of transportation: •Any kind of Motorcycle: •Regular fare: 90.00, •Pwd/ Senior citizen: 72.00"
+	},
+	{
+		"question": "How long and how much does it cost to travel in Bree- Brix Brazil Resort?",
+		"answer": "Distance: 7 km | Mode of transportation: •Any kind of Motorcycle: •Regular Fare: 60.00, •Student/PWD/Senior Citizen: 48.00 | •Van: •Regular fare: 30.00"
+	},
+	{
+		"question": "Gaano katagal at magkano ang pamasahe para makapunta sa lahat ng mga lugar na pasyalan sa Lakewood?",
+		"answer": "Lakewood Boulevard: Distansya: 1 km. | Paraan ng transportasyon: •Anumang motorsiklo: •Regular na pamasahe: 20.00, •PWD/ Senior Citizen: 14.00 | Alindahaw Lakeview Resort: Distansya: 5 km. | Paraan ng transportasyon: •Anumang motorsiklo: •Regular na pamasahe: 30.00, •PWD/ Senior Citizen: 26.00 | •Van: •Regular na pamasahe: 20.00 | Floating Cottage: Distansya: 5 km. | Paraan ng transportasyon: •Anumang motorsiklo: •Regular na pamasahe: 30.00, •PWD/ Senior Citizen: 26.00 | •Van: •Regular na pamasahe: 20.00 | Meguranao Peak Busai: Distansya: 3 km. | Paraan ng Transportasyon: •Anumang motorsiklo: •Regular na Pamasahe: 30.00, •PWD/ Senior Citizen: 26.00 | PG Suite Spot: Distansya: 17 km. | Paraan ng Transportasyon: •Anumang motorsiklo: •Regular na pamasahe: 90.00, •PWD/Senior Citizen: 72.00 | Villa Inocentes: Distansya: 10 km. | Paraan ng transportasyon: •Anumang motorsiklo: •Regular na pamasahe: 50.00, •PWD/ Senior Citizen: 40.00 | •Van: •Regular na pamasahe: 40.00 | Libas Spring Resort: Distansya: 10 km. | Paraan ng Transportasyon: •Anumang motorsiklo: •Regular na pamasahe: 100.00, •PWD/ Senior Citizen: 80.00 | •Van: •Regular na Pamasahe: 50.00 | Baka Falls: Distansya: 14 km. | Paraan ng transportasyon: •Anumang motorsiklo: •Regular na Pamasahe: 120.00, •PWD/ Senior Citizen: 96.00 | HexaK Spring Resort: Distansya: 7 km. | Paraan ng Transportasyon: •Anumang motorsiklo: •Regular na Pamasahe: 60.00, •Student/PWD/Senior Citizen: 48.00 | •Van: •Regular pamasahe: 30.00 | Roberto’s Villa: Distansya: 17 km. | Paraan ng Transportasyon: •Anumang motorsiklo: •Regular na pamasahe: 90.00, •PWD/ Senior Citizen: 72.00 | Camp Lagkaw: Distansya: 14 km. | Paraan ng transportasyon: •Anumang motorsiklo: •Regular na Pamasahe: 80.00, •PWD/ Senior Citizen: 64.00 | •Van: •Regular na Pamasahe: 50.00 | Bree-brix Brazil Resort: Distansya: 7 km. | Paraan ng Transportasyon: •Anumang motorsiklo: •Regular na Pamasahe: 60.00, •Student/PWD/Senior Citizen: 48.00 | •Van: •Regular pamasahe: 30.00"
+	}
+
+]
 }

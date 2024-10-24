@@ -29,7 +29,7 @@ class PlaceSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Places
-        fields = ['id', 'name', 'image', 'description', 'type', 'address', 'like_count']
+        fields = ['id', 'name', 'image', 'description', 'type', 'address', 'status', 'like_count']
 
     def get_like_count(self, obj):
         return LikePlace.objects.filter(place_name=obj).count()

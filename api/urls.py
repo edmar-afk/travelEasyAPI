@@ -23,5 +23,9 @@ urlpatterns = [
     path('loved-places/', views.PlaceListView.as_view(), name='place-list'),
     path('user/<int:user_id>/liked-places/', views.UserLikedPlacesView.as_view(), name='user-liked-places'),
     path('places/<int:placeId>/subplaces/', views.SubPlacesByPlaceView.as_view(), name='subplaces-by-place'),
+    
+    path('places/approved/', views.ApprovedPlaceListView.as_view(), name='approved-places'),
+    path('places/ongoing/', views.OngoingPlaceListView.as_view(), name='ongoing-places'),
+    
     path('', include(api_router.urls)),
 ]

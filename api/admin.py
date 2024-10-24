@@ -3,7 +3,7 @@ from .models import Places, SubPlaces
 from django.utils.html import format_html
 
 class PlacesAdmin(admin.ModelAdmin):
-    list_display = ('name', 'formatted_description', 'type', 'address')
+    list_display = ('name', 'formatted_description', 'type', 'status', 'address')
     
     def formatted_description(self, obj):
         return format_html("<pre>{}</pre>", obj.description)
