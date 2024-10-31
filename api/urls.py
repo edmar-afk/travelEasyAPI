@@ -27,5 +27,9 @@ urlpatterns = [
     path('places/approved/', views.ApprovedPlaceListView.as_view(), name='approved-places'),
     path('places/ongoing/', views.OngoingPlaceListView.as_view(), name='ongoing-places'),
     
+    path('profiles/<int:user_id>/birthday/', views.UserBirthdayView.as_view(), name='user-birthday'),
+    path('profiles/<int:user_id>/update-birthday/', views.UpdateBirthdayView.as_view(), name='update-birthday'),
+    path('profiles/<int:user_id>/', views.UpdateProfileView.as_view(), name='update-profile'),
+    path('profiles/<int:user_id>/picture/', views.UserProfilePictureView.as_view(), name='user-profile-picture'),
     path('', include(api_router.urls)),
 ]

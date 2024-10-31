@@ -4,8 +4,8 @@ from rest_framework.permissions import AllowAny, IsAuthenticated
 from django.contrib.auth.models import User
 from rest_framework import status, viewsets
 from django.db.models import Count
-from .serializers import UserRegistrationSerializer, ChatbotSerializer, PlaceSerializer, LikePlaceSerializer, SubPlaceSerializer
-from .models import Places, LikePlace, SubPlaces
+from .serializers import UserRegistrationSerializer, ChatbotSerializer, PlaceSerializer, ProfileSerializer, LikePlaceSerializer, SubPlaceSerializer, ProfileSerializer
+from .models import Places, LikePlace, SubPlaces, Profile
 from rest_framework.exceptions import ValidationError
 from rest_framework.response import Response
 from rest_framework.views import APIView
@@ -18,6 +18,7 @@ from difflib import get_close_matches
 from django.conf import settings
 import os
 BASE_DIR = settings.BASE_DIR
+from django.views.decorators.csrf import csrf_exempt
 
 class UserRegistrationView(APIView):
     permission_classes = [AllowAny]  # Allow unauthenticated access
@@ -198,3 +199,94 @@ class OngoingPlaceListView(generics.ListAPIView):
     def get_queryset(self):
         # Filter places that are only 'On-going'
         return Places.objects.filter(status='On-going')
+    
+
+
+
+class UpdateBirthdayView(generics.GenericAPIView):
+    queryset = Profile.objects.all()
+    serializer_class = ProfileSerializer
+    permission_classes = [permissions.IsAuthenticated]
+
+    def post(self, request, user_id):
+        try:
+            # Fetch the user object first
+            user = User.objects.get(id=user_id)
+            profile, created = Profile.objects.get_or_create(user=user)  # Create profile if it doesn't exist
+            
+            # Update the birthday
+            birthday = request.data.get('birthday')
+            if birthday:
+                profile.birthday = birthday
+                profile.save()
+                serializer = self.get_serializer(profile)
+                return Response(serializer.data, status=status.HTTP_201_CREATED)  # Birthday created
+            else:
+                return Response({"detail": "Birthday not provided."}, status=status.HTTP_400_BAD_REQUEST)
+        except User.DoesNotExist:
+            return Response({"detail": "User not found."}, status=status.HTTP_404_NOT_FOUND)
+
+    def patch(self, request, user_id):
+        try:
+            # Fetch the user object first
+            user = User.objects.get(id=user_id)
+            profile = self.queryset.get(user=user)  # Fetch profile by user instance
+            
+            # Update the birthday
+            birthday = request.data.get('birthday')
+            if birthday:
+                profile.birthday = birthday
+                profile.save()
+                serializer = self.get_serializer(profile)
+                return Response(serializer.data)
+            else:
+                return Response({"detail": "Birthday not provided."}, status=status.HTTP_400_BAD_REQUEST)
+        except User.DoesNotExist:
+            return Response({"detail": "User not found."}, status=status.HTTP_404_NOT_FOUND)
+        except Profile.DoesNotExist:
+            return Response({"detail": "Profile not found."}, status=status.HTTP_404_NOT_FOUND)
+        
+# View to retrieve a user's birthday based on user ID
+class UserBirthdayView(generics.RetrieveAPIView):
+    serializer_class = ProfileSerializer
+    permission_classes = [permissions.IsAuthenticated]
+
+    def get_object(self, user_id):
+        # Get the profile associated with the user_id
+        return get_object_or_404(Profile, user__id=user_id)
+
+    def get(self, request, user_id):
+        profile = self.get_object(user_id)
+        serializer = self.get_serializer(profile)
+        # Return only the birthday field
+        return Response({"birthday": serializer.data.get("birthday")})
+    
+
+
+class UpdateProfileView(generics.UpdateAPIView):
+    queryset = Profile.objects.all()
+    serializer_class = ProfileSerializer
+    permission_classes = [permissions.IsAuthenticated]
+
+    def patch(self, request, user_id):
+        try:
+            profile = self.queryset.get(user__id=user_id)  # Fetch profile by user ID
+        except Profile.DoesNotExist:
+            return Response({"detail": "Profile not found."}, status=status.HTTP_404_NOT_FOUND)
+
+        serializer = self.get_serializer(profile, data=request.data, partial=True)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+    
+class UserProfilePictureView(APIView):
+    def get(self, request, user_id):
+        try:
+            # Fetch the user's profile using the user ID
+            profile = Profile.objects.get(user__id=user_id)
+            # Return the profile picture URL or None if it doesn't exist
+            profile_pic_url = profile.profile_pic.url if profile.profile_pic else None
+            return Response({'profile_pic': profile_pic_url}, status=status.HTTP_200_OK)
+        except Profile.DoesNotExist:
+            return Response({'error': 'Profile not found'}, status=status.HTTP_404_NOT_FOUND)

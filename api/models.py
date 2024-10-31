@@ -5,6 +5,12 @@ import os
 # Create your models here.
 
 
+class Profile(models.Model):
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    profile_pic = models.FileField(upload_to='user-profile/', validators=[FileExtensionValidator(allowed_extensions=['png', 'jpeg', 'jpg'])], blank=True, null=True)
+    birthday = models.DateField(blank=True, null=True)
+    mobile_num = models.TextField(blank=True, null=True)
+    
 class Places(models.Model):
     name = models.TextField()
     image = models.FileField(upload_to='places/', validators=[FileExtensionValidator(allowed_extensions=['png', 'jpeg', 'jpg'])], blank=True)
