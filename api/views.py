@@ -19,6 +19,7 @@ from django.conf import settings
 import os
 BASE_DIR = settings.BASE_DIR
 from django.views.decorators.csrf import csrf_exempt
+import spacy
 
 class UserRegistrationView(APIView):
     permission_classes = [AllowAny]  # Allow unauthenticated access
@@ -141,22 +142,41 @@ class SubPlacesByPlaceView(APIView):
 
 
 
-    # Load the knowledge base from a JSON file
+# Load spaCy language model
+model_path = os.path.join(settings.BASE_DIR, 'en_core_web_md')
+nlp = spacy.load(model_path) if os.path.exists(model_path) else spacy.load("en_core_web_md")
+
+BASE_DIR = settings.BASE_DIR
+
+# Load the knowledge base from a JSON file
 def load_knowledge_base(file_path: str):
-    full_path = os.path.join(BASE_DIR, file_path)
+    full_path = os.path.join(settings.BASE_DIR, file_path)
     with open(full_path, 'r') as file:
         data = json.load(file)
     return data
 
 # Save the updated knowledge base to the JSON file
 def save_knowledge_base(file_path: str, data: dict):
-    full_path = os.path.join(BASE_DIR, file_path)
+    full_path = os.path.join(settings.BASE_DIR, file_path)
     with open(full_path, 'w') as file:
         json.dump(data, file, indent=2)
 
+# Load spaCy language model
+model_path = os.path.join(settings.BASE_DIR, 'en_core_web_md')
+nlp = spacy.load(model_path) if os.path.exists(model_path) else spacy.load("en_core_web_md")
+
 def find_best_match(user_question: str, questions: list[str]) -> str | None:
-    matches = get_close_matches(user_question, questions, n=1, cutoff=0.6)
-    return matches[0] if matches else None
+    # Process the user question with spaCy
+    user_doc = nlp(user_question)
+    
+    # Calculate similarity scores with each question in the knowledge base
+    similarities = [(q, user_doc.similarity(nlp(q))) for q in questions]
+    
+    # Find the question with the highest similarity
+    best_match = max(similarities, key=lambda x: x[1], default=None)
+    
+    # Return the best match if the similarity score exceeds a threshold
+    return best_match[0] if best_match and best_match[1] > 0.7 else None
 
 def get_answer_for_question(question: str, knowledge_base: dict) -> str | None:
     for q in knowledge_base["questions"]:
@@ -182,7 +202,6 @@ class ChatbotViewSet(viewsets.ViewSet):
             else:
                 return Response({'answer': "I don't understand the question."}, status=status.HTTP_200_OK)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-        
         
         
         
